@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const archiver = require('archiver');
+const AdmZip = require('adm-zip');
 
 const sourceDir = path.join(__dirname, 'resourcepack');
 const outputDir = path.join(__dirname, 'releases');
@@ -15,25 +15,14 @@ if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-const output = fs.createWriteStream(outputFile);
-const archive = archiver('zip', { zlib: { level: 9 } });
+try {
+  const archive = new AdmZip();
+  archive.addLocalFolder(sourceDir);
+  archive.writeZip(outputFile);
 
-output.on('close', () => {
-  console.log(`Created ${outputFile} (${archive.pointer()} total bytes)`);
-});
-
-archive.on('warning', (err) => {
-  if (err.code === 'ENOENT') {
-    console.warn(err);
-  } else {
-    throw err;
-  }
-});
-
-archive.on('error', (err) => {
-  throw err;
-});
-
-archive.pipe(output);
-archive.directory(sourceDir, false);
-archive.finalize();
+  const fileSize = fs.statSync(outputFile).size;
+  console.log(`Created ${outputFile} (${fileSize} total bytes)`);
+} catch (err) {
+  console.error(`Failed to create archive: ${err.message}`);
+  process.exit(1);
+}
