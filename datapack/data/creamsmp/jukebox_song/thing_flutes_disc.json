@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "creamsmp:music_disc.thing_flutes_disc"
+  },
+  "description": {
+    "text": "Thing - Flutes of the Jungle"
+  },
+  "length_in_seconds": 230,
+  "comparator_output": 10
+}

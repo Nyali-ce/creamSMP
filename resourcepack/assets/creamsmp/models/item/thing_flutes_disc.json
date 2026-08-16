@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "creamsmp:item/thing_flutes_disc"
+  }
+}

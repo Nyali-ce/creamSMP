@@ -1,0 +1,29 @@
+{
+  "music_disc.test_disc": {
+    "sounds": [
+      {
+        "name": "creamsmp:music_disc/test_disc",
+        "volume": 1,
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.thing_flutes_disc": {
+    "sounds": [
+      {
+        "name": "creamsmp:music_disc/thing_flutes_disc",
+        "volume": 1,
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.mommy_asmr_disc": {
+    "sounds": [
+      {
+        "name": "creamsmp:music_disc/mommy_asmr_disc",
+        "volume": 1,
+        "stream": true
+      }
+    ]
+  }
+}

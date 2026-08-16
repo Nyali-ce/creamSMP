@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "creamsmp:music_disc.mommy_asmr_disc"
+  },
+  "description": {
+    "translate": "Mommy ASMR"
+  },
+  "length_in_seconds": 1548,
+  "comparator_output": 1
+}
