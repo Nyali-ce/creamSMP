@@ -116,7 +116,7 @@ async function main() {
         ],
         key: {
             P:
-                "minecraft:iron"
+                "minecraft:iron_ingot"
             ,
             D:
                 "minecraft:gold_ingot"
