@@ -25,5 +25,23 @@
         "stream": true
       }
     ]
+  },
+  "music_disc.re7_disc": {
+    "sounds": [
+      {
+        "name": "creamsmp:music_disc/re7_disc",
+        "volume": 1,
+        "stream": true
+      }
+    ]
+  },
+  "music_disc.saferoom_disc": {
+    "sounds": [
+      {
+        "name": "creamsmp:music_disc/saferoom_disc",
+        "volume": 1,
+        "stream": true
+      }
+    ]
   }
 }

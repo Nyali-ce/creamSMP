@@ -3,7 +3,7 @@ const path = require('path');
 const AdmZip = require('adm-zip');
 
 const sourceDir = path.join(__dirname, 'resourcepack');
-const outputDir = path.join(__dirname, 'releases');
+const outputDir = path.join(__dirname, 'Releases');
 const outputFile = path.join(outputDir, 'CreamSMP-ResourcePack.zip');
 
 if (!fs.existsSync(sourceDir)) {

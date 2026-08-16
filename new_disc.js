@@ -100,7 +100,7 @@ async function main() {
             text: `Author - ${name}`
         },
         length_in_seconds: 60,
-        comparator_output_signal: 15
+        comparator_output: 15
     };
     writeJson(path.join(jukeboxSongDir, `${discId}.json`), jukeboxSongJson);
 

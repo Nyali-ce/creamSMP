@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "creamsmp:music_disc.saferoom_disc"
+  },
+  "description": {
+    "text": "Author - saferoom"
+  },
+  "length_in_seconds": 174,
+  "comparator_output": 15
+}

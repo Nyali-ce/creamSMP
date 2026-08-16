@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [" P ", "PDP", " P "],
+  "key": {
+    "P": "minecraft:iron",
+    "D": "minecraft:iron_bars"
+  },
+  "result": {
+    "id": "minecraft:music_disc_cat",
+    "components": {
+      "minecraft:jukebox_playable": "creamsmp:saferoom_disc",
+      "minecraft:item_model": "creamsmp:saferoom_disc"
+    }
+  }
+}
